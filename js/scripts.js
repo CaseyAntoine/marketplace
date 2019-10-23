@@ -34,4 +34,9 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $(".btn-warning").click(function() {
+    $(".survey").show();
+  });
+
 });
