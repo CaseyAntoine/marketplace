@@ -1,7 +1,19 @@
+.order {
+  display:none;
+}
 .confirmation {
   display: none;
 }
 
 .survey {
   display: none;
+}
+
+.merch {
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.btn-info {
+  margin-bottom: 7px;
 }

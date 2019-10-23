@@ -39,4 +39,8 @@ $(document).ready(function() {
     $(".survey").show();
   });
 
+  $(".btn-xs").click(function() {
+    $(".order").show();
+  });
+
 });
