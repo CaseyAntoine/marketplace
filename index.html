@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Market</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
@@ -14,50 +14,110 @@
         <h1>Welcome to the Marketplace</h1>
       </div>
       <div class="row">
+        <div class="col-sm-4">
+          <img src="img/bracelet.jpeg" alt="a tape measure bracelet">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/hat.jpeg" alt="Santas pants hat">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/necklace.jpeg" alt="gold necklace">
+        </div>
+      </div>
+      <div class="row">
         <div class="col-sm-6">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label for="inputFirst" class="col-sm-3 control-label">First Name</label>
-              <div class="col-sm-6">
-                <input class="form-control" type="text" placeholder="John">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h2>Order Form</h2>
+            </div>
+            <div class="panel-body bg-success">
+              <form class="form-horizontal">
+                <div class="form-group col-sm-4">
+                  <label class="radio-inline"><input type="radio" name="select" value="bracelet">Bracelet</label>
+                </div>
+                <div class="form-group col-sm-4">
+                  <label class="radio-inline"><input type="radio" name="select" value="hat">Hat</label>
+                </div>
+                <div class="form-group col-sm-4">
+                  <label class="radio-inline"><input type="radio" name="select" value="necklace">Necklace</label>
+                </div>
+                  <!-- <label for="inputChoice" class="col-sm-3 control-label">Bracelet</label>
+                  <div class="col-sm-2">
+                    <input class="form-control choice" type="radio">
+                  </div> -->
+                <div class="form-group">
+                  <label for="inputFirst" class="col-sm-3 control-label">First Name</label>
+                  <div class="col-sm-6">
+                    <input class="form-control firstName" type="text" placeholder="John">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputLast" class="col-sm-3 control-label">Last Name</label>
+                  <div class="col-sm-6">
+                    <input class="form-control lastName" type="text" placeholder="Doe">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress1" class="col-sm-3 control-label">Address</label>
+                  <div class="col-sm-6">
+                    <input class="form-control address1" type="text" placeholder="Address Line 1">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2" class="col-sm-3 control-label">Address</label>
+                  <div class="col-sm-6">
+                    <input class="form-control address2" type="text" placeholder="Address Line 2">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputCity" class="col-sm-3 control-label">City</label>
+                  <div class="col-sm-6">
+                    <input class="form-control city" type="text" placeholder="City">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputState" class="col-sm-3 control-label">State</label>
+                  <div class="col-sm-6">
+                    <input class="form-control state" type="text" placeholder="State">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputZip" class="col-sm-3 control-label">Zip</label>
+                  <div class="col-sm-6">
+                    <input class="form-control zip" type="text" placeholder="zip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-10">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+                </div>
+                </form>
               </div>
             </div>
-            <div class="form-group">
-              <label for="inputLast" class="col-sm-3 control-label">Last Name</label>
-              <div class="col-sm-6">
-                <input class="form-control" type="text" placeholder="Doe">
+          </div>
+          <div class="confirmation col-sm-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h2>Order Confirmation!</h2>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="inputAddress1" class="col-sm-3 control-label">Address</label>
-              <div class="col-sm-6">
-                <input class="form-control" type="text" placeholder="Address Line 1">
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet,<span id="userFirst"></span><span id="userLast"></span>
+                <div>
+                  <p>You selected to purchase the <span id="selection"></span>! Thanks for your order!</p>
+
+                  <p>Order will be delivered to:</p>
+                  <p id="address1"></p>
+                  <p id="address2"></p>
+                  <p id="city"></p>
+                  <p id="state"></p>
+                  <p id="zip"></p>
+                </div>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
+
             </div>
-            <div class="form-group">
-              <label for="inputAddress2" class="col-sm-3 control-label">Address</label>
-              <div class="col-sm-6">
-                <input class="form-control" type="text" placeholder="Address Line 2">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputCity" class="col-sm-3 control-label">City</label>
-              <div class="col-sm-6">
-                <input class="form-control" type="text" placeholder="City">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputState" class="col-sm-3 control-label">State</label>
-              <div class="col-sm-6">
-                <input class="form-control" type="text" placeholder="State">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputZip" class="col-sm-3 control-label">Zip</label>
-              <div class="col-sm-6">
-                <input class="form-control" type="text" placeholder="zip">
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
